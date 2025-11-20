@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zing Furniture</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg py-3" style="background-color: white;">
+        <div class="container">
+            
+            <a class="navbar-brand fw-bold fs-4" href="#" style="color: #212529;">
+                Zing<span style="color: #ff8c00;">.</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center"> 
+                    
+                    <li class="nav-item">
+                        <a class="nav-link text-dark active px-3" aria-current="page" href="#">Home</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu" id="productsDropdownMenu">
+                            </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link text-dark px-3" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark px-3" href="#">Testimonial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark px-3" href="#">Contact</a>
+                    </li>
+
+                    <li class="nav-item me-3">
+                        <form class="d-flex" role="search">
+                            <div class="input-group">
+                                <span class="input-group-text bg-white border-end-0" id="search-addon" style="border-radius: 20px 0 0 20px;">
+                                    <i class="bi bi-search text-muted" style="font-size: 0.9rem;"></i>
+                                </span>
+                                <input type="search" class="form-control border-start-0" placeholder="Search furniture..." aria-label="Search" style="border-radius: 0 20px 20px 0; max-width: 150px;">
+                            </div>
+                        </form>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#" class="btn btn-sm text-white px-4 py-2" style="background-color: #ff8c00; border-radius: 6px;">
+                            Buy online
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid d-flex justify-content-center align-items-center flex-column" style="min-height: calc(100vh - 80px);">
+        <div class="text-center" style="max-width: 800px;">
+            
+            <h1 class="display-3 fw-bolder mb-4" style="color: #212529;">
+                Amazing furniture for <br> your home
+            </h1>
+            
+            <p class="lead text-muted fs-5 px-5">
+                We think the chair is the most important piece of furniture in your home. Because if you love the chair you are sitting in chances are you will love the rest of the room.
+            </p>
+            
+        </div>
+        
+        <div class="container mt-5" id="searchResultsArea">
+            <p class="text-center text-muted">Nhập từ khóa tìm kiếm nội thất trên Navbar (ví dụ: chair, table) và nhấn Enter.</p>
+        </div>
+    </div>
+    <div class="container-fluid p-0">
+        <img src="img/Image.png" class="img-fluid w-100" alt="Ảnh nội thất">
+    </div>
+
+
+    <div class="container-fluid d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+      <div class="row align-items-center w-100">
+        <div class="col-md-6 position-relative d-flex justify-content-center align-items-center">
+          <img src="img/Back.png" alt="Ảnh nền" class="position-relative" style="
+            width: 350px;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 225px;
+            z-index: 1;
+            margin-right: -80px;"/>
+
+          <img src="img/Front.png" alt="Ảnh nổi" class="position-absolute" style="
+            width: 200px;
+            height: 290px;
+            object-fit: cover;
+            border-radius: 75px;
+            bottom: -20px;
+            left: 550px;
+            z-index: 2;"/>
+        </div>
+
+        <div class="col-md-6 text-center text-md-start px-4">
+          <h5 class="text-danger fw-bold" style="letter-spacing: 3px;">ABOUT US</h5>
+          <h2 class="fw-bold mb-3" style="font-size: 2.5rem;">We design and craft <br> furniture for life</h2>
+          <p class="text-muted mb-4">
+            Understanding the blend of aesthetics and function is our mission. <br> We are dedicated to delivering beautiful, durable pieces <br> with dedication and determination.
+          </p>
+
+          <div class="row text-center">
+            <div class="col-6 col-md-3 mb-3">
+              <h4 class="text-danger fw-bold">15+</h4>
+              <p class="text-muted">Years Designing</p>
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+              <h4 class="text-danger fw-bold">1k+</h4>
+              <p class="text-muted">Products Sold</p>
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+              <h4 class="text-danger fw-bold">20k+</h4>
+              <p class="text-muted">Happy Customers</p>
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+              <h4 class="text-danger fw-bold">4.9★</h4>
+              <p class="text-muted">Overall Rating</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+      <div class="row align-items-center w-100">
+        <div class="col-md-6 position-relative d-flex justify-content-center align-items-center">
+            <div class="text-start">
+                <h1 class="display-3 fw-bold mb-3" style="color: #212529;"> Dare to live the life <br>you've always wanted.</h1>
+                <p class="lead mb-4" style="color: #6c757d; font-size: 1.25rem;">Life is short and the world is wide. So, better <br>get started.</p>
+                
+                <div class="d-flex align-items-center bg-white rounded-pill p-1 shadow-sm" style="max-width: 400px;">
+                    
+                    <div class="dropdown d-flex align-items-center px-3 py-2">
+                        <i class="bi bi-geo-alt-fill text-danger me-2"></i>
+                        <div>
+                            <small class="text-muted d-block text-uppercase" style="font-size: 0.75rem;">Location</small>
+                            <a href="#" class="nav-link p-0 fw-bold dropdown-toggle" role="button" id="locationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                Maldives, Asia Region
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="locationDropdown">
+                                <li><a class="dropdown-item" href="#">Maldives, Asia Region</a></li>
+                                <li><a class="dropdown-item" href="#">Paris, Europe</a></li>
+                                <li><a class="dropdown-item" href="#">Tokyo, Asia</a></li>
+                                <li><a class="dropdown-item" href="#">New York, USA</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="vr mx-2" style="height: 40px; border-color: #dee2e6;"></div>
+
+                    <div class="dropdown d-flex align-items-center px-3 py-2">
+                        <i class="bi bi-calendar-check-fill text-danger me-2"></i>
+                        <div>
+                            <small class="text-muted d-block text-uppercase" style="font-size: 0.75rem;">Book</small>
+                            <a href="#" class="nav-link p-0 fw-bold dropdown-toggle" role="button" id="dateDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                24 Aug, 2024
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dateDropdown">
+                                <li><a class="dropdown-item" href="#">24 Aug, 2024 (Today)</a></li>
+                                <li><a class="dropdown-item" href="#">15 Sep, 2024</a></li>
+                                <li><a class="dropdown-item" href="#">20 Dec, 2024</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-lg rounded-circle p-3 ms-auto" style="background-color: #e83e8c; border: none; box-shadow: 0 4px 6px rgba(232, 62, 140, 0.4);">
+                        <i class="bi bi-arrow-right text-white fw-bold"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6 text-center text-md-start px-4">
+              <div class="position-relative d-inline-block">
+
+          <img src="Img/Human.png" alt="Person standing on rocks looking out at the sea"  class="img-fluid"  style="
+                    width: 400px;
+                    height: 550px;
+                    object-fit: cover;
+                    /* Tạo shape bo tròn vòm */
+                    border-radius: 150px 150px 0 0;">
+          <img src="Img/MiniHuman.png" alt="Person sitting by the water" class="img-fluid position-absolute rounded-pill" style="
+                    bottom: 40px;
+                    right: -70px;
+                    width: 147px;
+                    height: 230px;
+                    object-fit: cover;
+                    border-radius: 8px;">
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid d-flex align-items-center justify-content-center" style="min-height: 100vh; background-color: #0b1a29; color: white;">
+        <div class="row w-100 p-5">
+            <h2 class="display-5 fw-bold mb-5">
+                What do customers say...
+            </h2>
+            <div class="col-md-6 position-relative d-flex justify-content-center align-items-center">
+                <div class="position-relative d-inline-block">
+                    <img 
+                        src="img/HumanLike.png" 
+                        alt="Customer giving a thumbs up" 
+                        class="img-fluid" 
+                        style="
+                            width: 350px; 
+                            height: 400px; 
+                            object-fit: cover;
+                            border-radius: 120px 120px 0 0;
+                            filter: brightness(0.7) blur(1px);
+                            position: relative; 
+                            z-index: 2;">
+
+                    <div 
+                        class="position-absolute" 
+                        style="
+                            bottom: 10px; 
+                            left: 10px; 
+                            color: #ff8c00; 
+                            font-size: 80px;
+                            z-index: 3;
+                        "
+                    >
+                        <i class="bi bi-star-fill" style="transform: rotate(20deg);"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 text-center text-md-start px-4">
+                <div class="w-100" style="max-width: 500px;">
+                    <div class="position-relative ps-4">
+                        <div 
+                            class="position-absolute" 
+                            style="
+                                top: -40px; 
+                                left: 0; 
+                                font-size: 60px; 
+                                color: #ff8c00; 
+                                line-height: 0.5;">“
+                        </div>
+                        <h3 class="fw-bold mb-3 mt-4" style="font-size: 1.8rem;">
+                            Amazing service
+                        </h3>
+                        <p class="lead mb-4" style="color: #adb5bd;">Since the online marketplace can be a scary place, the presence of customer reviews on an online store helps establish authenticity, confidence, and trust among shoppers.</p>
+                        <p class="fw-bold mb-0" style="color: #ff8c00;">Wade Warren</p>
+                        <p class="" style="color: white; "> Doctor</p>
+                    </div>
+                    <div class="d-flex justify-content-end mt-5">
+                        <button class="btn btn-outline-light rounded-circle p-2 me-2" style="width: 30px; height: 30px; border: 1px solid #adb5bd;">
+                            <i class="bi bi-chevron-left" style="font-size: 0.7rem;"></i>
+                        </button>
+                        <button class="btn btn-outline-light rounded-circle p-2" style="width: 30px; height: 30px; border: 1px solid #adb5bd;">
+                            <i class="bi bi-chevron-right" style="font-size: 0.7rem;"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="container-fluid py-5" style="background-color: #f8f9fa; color: #343a40; min-height: 100vh;">
+        
+        <div class="container text-center mb-5" style="max-width: 1000px;">
+            <small class="text-muted d-block fw-bold text-uppercase mb-2">Testimonials</small>
+            <h2 class="display-4 fw-bold">What Customers Say</h2>
+        </div>
+
+        <div 
+            class="container-fluid d-flex align-items-center justify-content-center" 
+            style="
+                height: calc(100vh - 200px); 
+                max-width: 1000px; 
+                margin: 0 auto;
+            "
+        >
+            <div class="w-100"> 
+                
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    
+                    <div class="carousel-inner">
+                        
+                        <div class="carousel-item active">
+                            <div class="row justify-content-center">
+                                
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="bg-white p-4 shadow-sm rounded-lg h-100 border border-light">
+                                        <h5 class="fw-bold mb-3" style="color: #343a40;">Superb Work!</h5>
+                                        <p class="text-muted mb-3" style="font-size: 0.95rem;">"Blessing welcomed ladyship she met humoured sir breeding her. Six curiosity day assurance bed necessary."</p>
+                                        <div class="mb-3" style="color: #ffc107;"><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-half"></i></div>
+                                        <p class="fw-bold mb-0" style="color: #007bff;">Sabo Masties</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="bg-white p-4 shadow-sm rounded-lg h-100 border border-light">
+                                        <h5 class="fw-bold mb-3" style="color: #343a40;">Superb Work!</h5>
+                                        <p class="text-muted mb-3" style="font-size: 0.95rem;">"Blessing welcomed ladyship she met humoured sir breeding her. Six curiosity day assurance bed necessary."</p>
+                                        <div class="mb-3" style="color: #ffc107;"><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-half"></i></div>
+                                        <p class="fw-bold mb-0" style="color: #007bff;">Sabo Masties</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="bg-white p-4 shadow-sm rounded-lg h-100 border border-light">
+                                        <h5 class="fw-bold mb-3" style="color: #343a40;">Superb Work!</h5>
+                                        <p class="text-muted mb-3" style="font-size: 0.95rem;">"Blessing welcomed ladyship she met humoured sir breeding her. Six curiosity day assurance bed necessary."</p>
+                                        <div class="mb-3" style="color: #ffc107;"><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-half"></i></div>
+                                        <p class="fw-bold mb-0" style="color: #007bff;">Sabo Masties</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="bg-white p-4 shadow-sm rounded-lg h-100 border border-light">
+                                        <h5 class="fw-bold mb-3" style="color: #343a40;">Excellent Result!</h5>
+                                        <p class="text-muted mb-3" style="font-size: 0.95rem;">"Another new testimonial to show the slide transition. The quality and professionalism were outstanding."</p>
+                                        <div class="mb-3" style="color: #ffc107;"><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i></div>
+                                        <p class="fw-bold mb-0" style="color: #007bff;">Jane Doe</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="bg-white p-4 shadow-sm rounded-lg h-100 border border-light">
+                                        <h5 class="fw-bold mb-3" style="color: #343a40;">Highly Recommended!</h5>
+                                        <p class="text-muted mb-3" style="font-size: 0.95rem;">"I was very happy with the service and would definitely use them again for future projects and needs."</p>
+                                        <div class="mb-3" style="color: #ffc107;"><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-half"></i></div>
+                                        <p class="fw-bold mb-0" style="color: #007bff;">John Smith</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="bg-white p-4 shadow-sm rounded-lg h-100 border border-light">
+                                        <h5 class="fw-bold mb-3" style="color: #343a40;">Great Value!</h5>
+                                        <p class="text-muted mb-3" style="font-size: 0.95rem;">"The whole team was professional, friendly, and delivered exactly what they promised on time and budget."</p>
+                                        <div class="mb-3" style="color: #ffc107;"><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i></div>
+                                        <p class="fw-bold mb-0" style="color: #007bff;">Alex Wang</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="d-flex justify-content-center mt-4">
+                    
+                    <button 
+                        class="btn btn-light rounded-circle p-3 me-3" 
+                        type="button" 
+                        data-bs-target="#testimonialCarousel" 
+                        data-bs-slide="prev" 
+                        style="width: 50px; height: 50px; border: 1px solid #ced4da;"
+                    >
+                        <i class="bi bi-arrow-left text-dark"></i> </button>
+                    
+                    <button 
+                        class="btn btn-dark rounded-circle p-3" 
+                        type="button" 
+                        data-bs-target="#testimonialCarousel" 
+                        data-bs-slide="next" 
+                        style="width: 50px; height: 50px;"
+                    >
+                        <i class="bi bi-arrow-right text-white"></i> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="pt-5" style="background-color: #f8f8f4; border-top: 5px solid #007bff;">
+        <div class="container py-4">
+            <div class="row">
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3" style="color: #212529;">
+                        Zing<span style="color: #ff8c00;">.</span>
+                    </h5>
+                    <p class="text-muted" style="font-size: 0.95rem;">
+                        4517 Washington Ave. <br>
+                        Manchester, Kentucky <br>
+                        39495
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3" style="color: #212529;">Quick links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted" style="font-size: 0.95rem;">Gallery</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted" style="font-size: 0.95rem;">About us</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted" style="font-size: 0.95rem;">Buy online</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3" style="color: #212529;">Policy</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted" style="font-size: 0.95rem;">Terms & conditions</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted" style="font-size: 0.95rem;">Privacy policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3" style="color: #212529;">Social</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted" style="font-size: 0.95rem;"><i class="bi bi-facebook me-2"></i>Facebook</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted" style="font-size: 0.95rem;"><i class="bi bi-instagram me-2"></i>Instagram</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted" style="font-size: 0.95rem;"><i class="bi bi-linkedin me-2"></i>LinkedIn</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-12 text-center pt-3">
+                    <p class="text-muted" style="font-size: 0.85rem;">
+                        Copyright ©2022 Zing Inc. All right reserved.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

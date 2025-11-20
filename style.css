@@ -1,0 +1,53 @@
+* {
+    /* transition mượt cho mọi thứ */
+    transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1); 
+}
+
+/* 2. hiệu ứng scroll reveal (trạng thái ẩn) */
+
+/* thiết lập ease cuộn */
+:root {
+    --scroll-ease: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+                   transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* mặc định: ẩn và di chuyển lên */
+.js-scroll > *,
+.js-scroll .fade-in-up,
+.js-scroll .fade-in-left,
+.js-scroll .fade-in-right {
+    opacity: 0;
+    transition: var(--scroll-ease);
+    transform: translateY(20px); 
+}
+
+/* biến thể: di chuyển từ trái */
+.js-scroll .fade-in-left {
+    transform: translateX(-50px);
+}
+
+/* biến thể: di chuyển từ phải */
+.js-scroll .fade-in-right {
+    transform: translateX(50px);
+}
+
+
+/* kích hoạt trạng thái hiển thị (thêm class 'scrolled') */
+.js-scroll.scrolled > *,
+.js-scroll.scrolled .fade-in-up,
+.js-scroll.scrolled .fade-in-left,
+.js-scroll.scrolled .fade-in-right {
+    opacity: 1;
+    transform: none; /* về vị trí gốc */
+}
+
+
+/* 3. delay giữa các phần tử */
+
+/* delay cho các phần tử con */
+.js-scroll.scrolled > *:nth-child(2) { transition-delay: 0.1s; }
+.js-scroll.scrolled > *:nth-child(3) { transition-delay: 0.2s; }
+.js-scroll.scrolled > *:nth-child(4) { transition-delay: 0.3s; }
+
+/* delay cho class cụ thể */
+.js-scroll.scrolled .fade-in-right { transition-delay: 0.3s; }
